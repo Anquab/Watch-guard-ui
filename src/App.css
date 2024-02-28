@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button2 {
+  border-radius: 7px;
+  color: white;
+  background-color: "#0096FF";
+  height: 5vh;
+  width: 15vh;
+}
+
+.styleSelect {
+  width: 140px;
+  height: 34px;
+  overflow: hidden;
+  /* background: url("images/downArrow.png") no-repeat right #04aa6d; */
+  border: 2px solid #000;
+  caret-shape: initial;
+  caret-color: red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  flex: 1;
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-item.special-item {
+  order: -1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-item.special-item {
+    order: initial;
+  }
+}
